@@ -1,4 +1,4 @@
-#![recursion_limit="256"]
+#![recursion_limit="512"]
 
 #[macro_use]
 extern crate cfg_if;
@@ -44,8 +44,7 @@ cfg_if! {
 }
 
 // Called by our JS entry point to run the example
-#[wasm_bindgen]
-pub fn run() {
+fn main() {
     // If the `console_error_panic_hook` feature is enabled this will set a panic hook, otherwise
     // it will do nothing.
     set_panic_hook();
