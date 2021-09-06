@@ -32,7 +32,7 @@ impl Component for App {
                         match switch {
                             AppRouter::RootPath => html!{
                                 <div>
-                                    <h2>{"covplot — global CoVID-19 graphs"}</h2>
+                                    <h2>{"Nepal Covid Graph"}</h2>
                                     <Graph></Graph>
                                 </div>
                             },

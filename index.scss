@@ -1,35 +1,53 @@
-html,
 body {
-  height: 100%;
-  margin: 0;
+    margin: 0;
+    background: #000;
+    color: #FFF;
+    font-family: 'Sen', sans-serif;
 }
-
-body {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-  background: linear-gradient(to bottom right, #fc6767, #ec008c);
-  font-size: 1.5rem;
+h2 {
+    font-size: 1em;
+    margin: 0.5em;
+    color: #DDD;
+    font-family: 'Helvetica';
 }
-
-main {
-  color: #fff6d5;
-  font-family: sans-serif;
-  text-align: center;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
-.logo {
-  height: 20em;
+#regions {
+    font-size: 0.8em;
+    padding: 0.5em;
+    max-height: 90vh;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    flex-shrink: 0;
 }
-
-.heart:after {
-  content: "❤️";
-
-  font-size: 1.75em;
+#regions::-webkit-scrollbar {
+    display: none;
 }
-
-h1 + .subtitle {
-  display: block;
-  margin-top: -1em;
+#regions li {
+    color: #CCC;
 }
+#regions li.selected {
+    font-weight: bold;
+    color: #c9587a;
+}
+#regions li:hover {
+    color: #FFF;
+    cursor: default;
+}
+#graph {
+    display: flex;
+}
+#canvas-container {}
+#graph canvas {}
+.source {
+    font-size: 0.8em;
+    color: #888;
+    margin: 2em 5em;
+    width: 60%;
+}
+a { color: #ccc; text-decoration: none; }
+a:hover { color: #fff; }
